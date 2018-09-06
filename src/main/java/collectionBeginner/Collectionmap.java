@@ -1,11 +1,9 @@
 package collectionBeginner;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
-import java.util.Map.Entry;
+import java.util.Set;
 
-import craterdog.collections.Set;
 
 
 
@@ -21,11 +19,21 @@ public class Collectionmap {
     map.put(003, "Nabin");
     map.put(004, "Saugat");
     
+    Set<Integer> set = map.keySet(); //it helps the print all the value
     
-   
+    
+   for(Integer s : set) {
+	   
+	   
+	   System.out.println(s+""+map.get(s));
+	   
+   }
     
     
-   java.util.Set<Entry<Integer, String>> setmap = map.entrySet();
+    
+    
+    
+  /* java.util.Set<Entry<Integer, String>> setmap = map.entrySet();
    Iterator itr=setmap.iterator();  
     
    while(itr.hasNext()) {
@@ -36,7 +44,7 @@ public class Collectionmap {
     	 
     	 
    }
-    
+   */ 
     
     
     

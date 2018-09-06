@@ -1,6 +1,7 @@
 package collectionBeginner;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -23,12 +24,23 @@ public class CoolectionList {
 		link.add("Abishek");
 		link.add("hari");
 		link.add("Krishna");
+		
+		link.add("26");
+		link.add("33");
+		link.add("2");
+		link.add("69");
+		link.add("1");
+		
+		list.add(3, "harimaya"); //list provide and attribute to add value in the any index where collection can only add the value in last it cant specify the index/place 
 
 		for (String st : list) {
 			System.out.println("ArrayList::" + st);
+		
 
 		}
-
+               
+		  Collections.sort(link);  //it helps to keap tghe value in order and it is only applicab;e for list
+		
 		for (String s : link) {
 			System.out.println("LinkList::" + s);
 
